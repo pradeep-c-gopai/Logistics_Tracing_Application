@@ -1,0 +1,1853 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My First dApp</title>
+        <style>
+            body {
+              background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ8NDQ0NFREWFhURFRUYHSggGBolGxUVITEhJSkrLjo6Fx8zODM4Nyg5LjcBCgoKDQ0NDg0NDi0ZFRkrLS03LTctNys3LSsrKysrKy0rKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAKgBLAMBIgACEQEDEQH/xAAbAAADAQEBAQEAAAAAAAAAAAACAwQBAAUGB//EABoQAQEBAQEBAQAAAAAAAAAAAAABAhIDERP/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD9NxTsVNmnZ00wqxTc1LnRudIKJRfSJoXQG9MtL6ZdALVK1W60VrQB3UvrTt1P6VRL7IvZZ61H7Ah9kfqt9UfoIm2XTdl0HZNwXk3AKfJb4o/JZ5Au8VvlUHks86Kt86oxUmKfjQKc6HNEZ0KaQO6ddFdO6UFrRe666K1pAHpUnrT/AE0l9aol9kPss9ai9hEXqm0p9U2gfZ5pudJc6NzoVVnRudJc6MzoFM02aTzQukD+g3RXTLoDLovWg3QNaB29J/Sj1ondUJ9aj9VPpUvoCX1Seir1S+gifZdM0CgzJ2CobgFPkr8knmq8wW+VVedRedU4oLMaPzpJjRudCqpoU0nmhTQH9OuiemXQG3RetAuga0DN6T+lHvRHpoCPWo/VT6VL6URJ6p9KPQig+ozozOk2dGZ0KpzoyaSzRk0CiaF0nmhdAd0y6K6d0A7oF0G6BdA3Wid6brRWtAD0qb0p26n9KIn9E3oo3U+wI0XTNAoOhuCoZkFHmp86lwoxQV+dUYqTFPxoFedG50lzozOhVM0KaTzQugP6ZdE9O6Ay6BrQLoGtA3eiN0WtE70IX6VN6U3dT7oEehNN2VQe9NDmk80ZNCqJoc0nmhzQKJpvRE0LoDendFdO6Ad0G6BdBugbrRetO1ovVAO6RumbpG6IVukbO3SNgVoFFoNB0MyXB5A/B+KmyfigpxTs1Nmm5oKc6MzpPnQ5oFE03oiaF0Kd0zorp3Qhl0C6BdBugbrRO63WitUA7pG6ZqkboF7Ko9l2g9eaHKRKOUD5oc0nlHNAfNN6Jmm9Ad0zovp3Qo7oN0HoN0I20Gqy6BaDNUndHqlaoF6pW6PVK0ANAoqEHQeQQWQOzTc0jJuaCjNNzU+aZKB80OaIlHKB803omab0BvTuiundAO6DdBug2g3VK1W2l6oB1StUWqVqgDVBRaLtB6Uo5SJRygdKOaIlHKB0reiZW9Ab07ov67oB3TLQdBtAVoLXWgtB2qVqitLtAOqVqj0XoAUIqEHQUCKAZKZmlQzIG5pkpMo5QOlFKVKKUDZW9FfW/QM+u+l/XfQFaG6ZaG0G2l6rrQWgzVL1W6oNUA6oLW2gtBdKKUqUUoGyjlJlFKBvTfpX0X0DPrvpf130B/WWh+s+gK0NrLWUGUFHQ0C6Cm2AsAqxnwyxnIA+NkFy34DIOOkFIDYKUMEApRSgcBn130H130B/XfQfWfQHaG1n0NoNtBa60FoOtBqttBaAbQ11oQVyilKlFKBsrZS5RSgZK36XK36Bn130ErfoC+uCKA5zWyAH4z4Z8dyBVyG5P5dwCe5Zyo4dwCflvJ/DuAJmW8ncO5Ar474Zyy5ADB2BsBjvrqwHfXfQ/WfQFaG1lrLQdaG11obQdaC11obQZQtoQUSilLlbKBkopS5WygZK2UErZQMlaCDgCgpAwzMBsg5l2cmZyKGZbMmzI5gCeHcKJhs8wTcO/NV+bfzQSfm7hX+bvzBJwzhX+YbhRLcBuVVwDWAS3ILFGsl6yIRYCm6heoAKG0VBQdaH661loOtDa6htB1DXWhoOoW0IHStlAKUBytlBKKAOUULlFAMhmS8mZAzMNzAZh+IAs5NzlmMn4yKzODJgecm5wgVMCnmfMDmATzzb+amYb+YJfzd+arh35gjvmG+ay+YbgEWsF6wt1grWAQ6yTrK3eSN5UR7hOoq3CNwRPoum7K0AaG1tDQZayuoaDqGtoQdWOrAM+tc4BRsc4BQcc4DMm4a4DsRRiOcKoxD8Zc5A/GTc5c4Dc5MmGOAcwKYc4HcOuHOANwC4c4C9ZJ3lzgT7yn9MucCb0if0jnKJ9wnTnCF6BWOBlC1wBrHOBjHOB//Z);
+                /* background-color: rgb(196, 192, 192); */
+                background-size: cover;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                border: 50px;
+                border-color: black;
+            }
+            div {
+                width: 20%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+            }
+            button {
+                width: 100%;
+                margin: 10px 0px 5px 0px;
+            }
+
+            .inputLabel {
+                text-align: left;
+                margin-top: 2px;
+                margin-left: 5px;
+                color:rgba(65, 65, 65, 0.974);
+            }
+
+            .secHead{
+                border-color: black;
+                color: rgb(50, 50, 50);
+                text-decoration: solid;
+                margin: 5px 4px;
+                align-items: center;
+            }
+
+            .secHeadSep{
+                background-color: rgb(251, 251, 251);
+                width: 98%;
+            }
+
+            .zoneSep{
+                border: 3px solid rgb(116, 114, 114);
+                border-radius: 1px;
+                width: 100%;
+            }
+
+            .secDiv{
+                width: 25%;
+                color: rgb(204, 191, 191);
+                background-color: transparent;
+                border-radius: 5px;
+                border-style:double;
+                border-color: black;
+                margin-top: 20px;
+            }
+
+            .inpFill{
+                margin: 5px 4px;
+                border-style: groove;
+                border-color:rgb(183 182 182);
+                border-radius: 3px;
+            }
+
+            .btns{
+                margin-bottom: 0px;
+                background-color: rgba(113, 111, 111, 0.071);
+                border-style: groove;
+                border-color: rgb(164 154 154);
+                color: #3a3939;
+                padding: 0px 0px;
+                text-align: center;
+                text-decoration: none;
+                width: 100%;
+                font-size: 16px;
+                margin: auto;
+                cursor: pointer;
+                position: relative;
+                border-radius: 5px;
+            }
+
+            .btns:hover {
+              animation: 2.5s shake infinite alternate;
+              background-color: white;
+              border-style:dotted;
+              border-color: rgb(78, 75, 75);
+            }
+
+            @keyframes shake {
+              0% { transform: skewX(-20deg); }
+              5% { transform: skewX(20deg); }
+              10% { transform: skewX(-10deg); }
+              15% { transform: skewX(10deg); }
+              20% { transform: skewX(0deg); }
+              100% { transform: skewX(0deg); }
+              20% { transform: skewX(0deg); }
+              100% { transform: skewX(0deg); }
+            }
+
+            .animate-Head
+            {
+              margin-top: 5px;
+              margin-bottom: 0%;
+              text-transform: uppercase;
+              background-image: linear-gradient(
+              -225deg,
+               #313131 0%,
+               #7b7a7a 29%,
+               #313131 67%,
+               #979797 100%
+                );
+              background-size: auto auto;
+              background-clip: border-box;
+              background-size: 200% auto;
+              color: #fff;
+              background-clip: text;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              animation: textclip 2s linear infinite;
+              display: inline-block;
+              font-size: 50px;
+            }
+
+          @keyframes textclip {
+              to {
+                  background-position: 200% center;
+                }
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <h1 class="animate-Head" id="ProjName">Logistic Tracing Application</h1><br>
+
+            <hr class="zoneSep">
+            <h2 style="margin-bottom: 5px; color: #514f4f;">Seller Zone</h2>
+
+            <div class="secDiv">
+            <label for="" class="secHead">ADD PRODUCTS</label>
+            <hr class="secHeadSep">
+            <label for="sellAddProdName" class="inputLabel">Name:</label>
+            <input type="text" id="sellAddProdName" class="inpFill" placeholder="Enter Product Name"/>
+            <label for="sellAddProdDesc" class="inputLabel">Description:</label>
+            <input type="text" id="sellAddProdDesc" class="inpFill" placeholder="Enter Product Description"/>
+            <label for="sellAddProdPrice" class="inputLabel">Price:</label>
+            <input type="text" id="sellAddProdPrice" class="inpFill" placeholder="Enter Product Price"/>
+            <label for="sellAddProdPickUp" class="inputLabel">Pickup Address:</label>
+            <input type="text" id="sellAddProdPickUp" class="inpFill" placeholder="Enter Product Pickup Address"/>
+            <button class="btns" onclick="addProduct()">ADD</button>
+            </div>
+
+
+
+            <div class="secDiv">
+                <label for="" class="secHead">VIEW ORDERS</label>
+                <hr class="secHeadSep">
+                <label for="SellViewOdr" class="inputLabel">Order ID:</label>
+                <input type="text" id="SellViewOdr" class="inpFill" placeholder="Enter Order ID"/>
+                <button class="btns" onclick="ViewOrders()">View</button>
+            </div>
+             
+
+            <div class="secDiv">
+              <label for="" class="secHead">VIEW BUYER DETAILS</label>
+              <hr class="secHeadSep">
+              <label for="SellViewBuyDetls" class="inputLabel">Order ID:</label>
+              <input type="text" id="SellViewBuyDetls" class="inpFill" placeholder="Enter Order ID"/>
+              <button class="btns" onclick="viewBuyerDetails()">View</button>
+          </div>
+
+
+
+            <div class="secDiv">
+                <label for="" class="secHead">PACK ORDER</label>
+                <hr class="secHeadSep">
+                <label for="SellPacOdr" class="inputLabel">Order ID:</label>
+                <input type="text" id="SellPacOdr" class="inpFill" placeholder="Enter Order ID"/>
+                <button class="btns" onclick="packOrder()">Pack</button>
+            </div>
+
+
+                <br><br><hr class="zoneSep">
+                <h3 style="margin-bottom: 5px; color: #514f4f;">Buyers Zone</h3>
+
+                <div class="secDiv">
+                    <label for="" class="secHead">CHOOSE SELLER</label>
+                    <hr class="secHeadSep">
+                    <label for="BuyChooSell" class="inputLabel">Seller:</label>
+                    <input type="text" id="BuyChooSell" class="inpFill" placeholder="Enter Seller Contract Address"/>
+                    <button class="btns" onclick="chooseSeller()">Choose</button>
+                </div>
+
+
+                <div class="secDiv">
+                    <label for="" class="secHead">REQUEST PRODUCT QUOTES</label>
+                    <hr class="secHeadSep">
+                    <label for="BProdID" class="inputLabel">Seller:</label>
+                    <input type="text" id="BProdID" class="inpFill" placeholder="Enter Seller Contract Address"/>
+                    <button class="btns" onclick="requestProductQuote()">Request</button>
+                </div>
+
+
+                <div class="secDiv">
+                    <label for="" class="secHead">BUY PRODUCT</label>
+                    <hr class="secHeadSep">
+                    <label for="BuyProdID" class="inputLabel">Product ID:</label>
+                    <input type="text" id="BuyProdID" class="inpFill" placeholder="Enter PID"/>
+                    <label for="BuyProdAmt" class="inputLabel">Amount:</label>
+                    <input type="text" id="BuyProdAmt" class="inpFill" placeholder="Enter Amount"/>
+                    <label for="BuyName" class="inputLabel">Name:</label>
+                    <input type="text" id="BuyName" class="inpFill" placeholder="Enter Your Name"/>
+                    <label for="BuyDelAdd" class="inputLabel">Address:</label>
+                    <input type="text" id="BuyDelAdd" class="inpFill" placeholder="Enter Delivery Address"/>
+                    <label for="BuyPhone" class="inputLabel">Phone:</label>
+                    <input type="text" id="BuyPhone" class="inpFill" placeholder="Enter Your Phone Number"/>
+                    <label for="BuyEmail" class="inputLabel">Email ID:</label>
+                    <input type="text" id="BuyEmail" class="inpFill" placeholder="Enter Your Email ID"/>
+                    <button class="btns" onclick="Buy()">Buy</button>
+                </div>
+                
+                <div class="secDiv">
+                  <label for="" class="secHead">GET ORDER ID</label>
+                  <hr class="secHeadSep">
+                  <label for="BuyGetOID" class="inputLabel">Product ID:</label>
+                  <input type="text" id="BuyGetOID" class="inpFill" placeholder="Enter Product ID"/>
+                  <button class="btns" onclick="getOrderId()">Get</button>
+              </div>
+
+                <div class="secDiv">
+                  <label for="" class="secHead">VIEW INVOICE</label>
+                  <hr class="secHeadSep">
+                  <label for="BuyProdBill" class="inputLabel">Order ID:</label>
+                  <input type="text" id="BuyProdBill" class="inpFill" placeholder="Enter OID"/>
+                  <button class="btns" onclick="viewInvoice()">View</button>
+              </div>
+
+
+                <div class="secDiv">
+                    <label for="" class="secHead">CHOOSE FREIGHT FORWARDER</label>
+                    <hr class="secHeadSep">
+                    <label for="BuyChooff" class="inputLabel">Freight Forwarder:</label>
+                    <input type="text" id="BuyChooff" class="inpFill" placeholder="Enter Freight Forwarder Contract Address"/>
+                    <button class="btns" onclick="chooseFreighter()">Choose</button>
+                </div>
+
+
+                <div class="secDiv">
+                    <label for="" class="secHead">BOOK FREIGHT FORWARDER</label>
+                    <hr class="secHeadSep">
+                    <label for="BuyBookff" class="inputLabel">Order ID:</label>
+                    <input type="text" id="BuyBookff" class="inpFill" placeholder="Enter Order ID"/>
+                    <label for="BuyBookffamt" class="inputLabel">Amount:</label>
+                    <input type="text" id="BuyBookffamt" class="inpFill" placeholder="Enter Amount"/>
+                    <button class="btns" onclick="bookFreight()">Book</button>
+                </div>
+
+                <div class="secDiv">
+                  <label for="" class="secHead">VIEW FREIGHT BOOKING DETAILS</label>
+                  <hr class="secHeadSep">
+                  <label for="BuyViewffBook" class="inputLabel">Order ID:</label>
+                  <input type="text" id="BuyViewffBook" class="inpFill" placeholder="Enter Order ID"/>
+                  <button class="btns" onclick="FreightBookingStatus()">Check</button>
+              </div>
+     
+
+              <div class="secDiv">
+                  <label for="" class="secHead">GET EXPORT ID</label>
+                  <hr class="secHeadSep">
+                  <label for="BuyGetExpoID" class="inputLabel">Order ID:</label>
+                  <input type="text" id="BuyGetExpoID" class="inpFill" placeholder="Enter Order ID"/>
+                  <button class="btns" onclick="getExportId()">Get</button>
+              </div>
+
+                <div class="secDiv">
+                    <label for="" class="secHead">TRACK DELIVERY</label>
+                    <hr class="secHeadSep">
+                    <label for="DelvStatus" class="inputLabel">Export ID:</label>
+                    <input type="text" id="DelvStatus" class="inpFill" placeholder="Enter Export ID"/>
+                    <button class="btns" onclick="productDeliveryStatus()">Check</button>
+                </div>
+
+                <br><br><hr class="zoneSep">
+                <h3 style="margin-bottom: 5px; color: #514f4f;">Logistics Zone</h3>
+
+
+                <div class="secDiv">
+                    <label for="" class="secHead">PICKUP ORDER</label>
+                    <hr class="secHeadSep">
+                    <label for="ffPickOdr" class="inputLabel">Order ID:</label>
+                    <input type="text" id="ffPickOdr" class="inpFill" placeholder="Enter Order ID"/>
+                    <button class="btns" onclick="pickOrder()">Pick Up</button>
+                </div>
+
+
+                <div class="secDiv">
+                    <label for="" class="secHead">Initiate Delivery</label>
+                    <hr class="secHeadSep">
+                    <label for="initExpoff" class="inputLabel">Export ID:</label>
+                    <input type="text" id="initExpoff" class="inpFill" placeholder="Enter Export ID"/>
+                    <button class="btns" onclick="initiateDelivery()">Start Shipping</button>
+                </div>
+
+                <div class="secDiv">
+                    <label for="" class="secHead">PORT CLEARANCE CONTRACT</label>
+                    <hr class="secHeadSep">
+                    <label for="ChooClrncePort" class="inputLabel">PortClearnce Contract:</label>
+                    <input type="text" id="ChooClrncePort" class="inpFill" placeholder="Enter Contract Address"/>
+                    <button class="btns" onclick="chooseClearncePort()">Choose</button>
+                </div>
+
+
+                <div class="secDiv">
+                    <label for="" class="secHead">SOURCE PORT ARRIVAL</label>
+                    <hr class="secHeadSep">
+                    <label for="SrcPortArvl" class="inputLabel">Export ID:</label>
+                    <input type="text" id="SrcPortArvl" class="inpFill" placeholder="Enter Export ID"/>
+                    <button class="btns" onclick="sourcePortArrival()">Arrive</button>
+                </div>
+
+                <div class="secDiv">
+                    <label for="" class="secHead">DESTINATION PORT ARRIVAL</label>
+                    <hr class="secHeadSep">
+                    <label for="DestPortArvl" class="inputLabel">Export ID:</label>
+                    <input type="text" id="DestPortArvl" class="inpFill" placeholder="Enter Export ID"/>
+                    <button class="btns" onclick="destinationPortArrival()">Arrive</button>
+                </div>
+
+                <div class="secDiv">
+                    <label for="" class="secHead">DELIVER</label>
+                    <hr class="secHeadSep">
+                    <label for="ffExpoDelvr" class="inputLabel">Export ID:</label>
+                    <input type="text" id="ffExpoDelvr" class="inpFill" placeholder="Enter Export ID"/>
+                    <button class="btns" onclick="deliver()">Deliver</button>
+                </div>
+
+                <br><br><hr class="zoneSep">
+                <h3 style="margin-bottom: 5px; color: #514f4f;">Port Clearance Zone</h3>
+
+                <div class="secDiv">
+                    <label for="" class="secHead">PROVIDE EXPORT CLEARANCE</label>
+                    <hr class="secHeadSep">
+                    <label for="ExpoPortClrnc" class="inputLabel">Export ID:</label>
+                    <input type="text" id="ExpoPortClrnc" class="inpFill" placeholder="Enter Export ID"/>
+                    <button class="btns" onclick="ExportClearance()">Provide Clearance</button>
+                </div>
+
+                <div class="secDiv">
+                    <label for="" class="secHead">PROVIDE IMPORT CLEARANCE</label>
+                    <hr class="secHeadSep">
+                    <label for="ImpoPortClrnc" class="inputLabel">Export ID:</label>
+                    <input type="text" id="ImpoPortClrnc" class="inpFill" placeholder="Enter Export ID"/>
+                    <button class="btns" onclick="importClearance()">Provide Clearance</button>
+                </div>
+                
+
+
+                <br><br><br>
+    </body>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.1/ethers.umd.js"
+        type="application/javascript"
+    ></script>
+
+    <script>
+        
+
+        let signer;
+        let provider;
+        let accounts;
+        
+        // let StepUpTokenSaleContract;
+        // let StepUpTokenSaleContractABI;
+        // let StepUpTokenSaleContractAddress;
+
+
+        let BuyerContract;
+        let BuyerContractABI;
+        let BuyerContractAddress;
+
+        let SellerContract;
+        let SellerContractABI;
+        let SellerContractAddress;
+
+        let LogisticsContract;
+        let LogisticsContractABI;
+        let LogisticsContractAddress;
+
+        let PortClearanceContract;
+        let PortClearanceContractABI;
+        let PortClearanceContractAddress;
+
+
+
+        async function addProduct() {
+            let pname = document.getElementById("sellAddProdName").value;
+            let pd = document.getElementById("sellAddProdDesc").value;
+            const price = document.getElementById("sellAddProdPrice").value;
+            let pickupAddress = document.getElementById("sellAddProdPickUp").value;
+            await SellerContract.addProduct(pname,pd,price,pickupAddress);
+        }
+
+        async function chooseSeller() {
+            var SellerAddress = document.getElementById("BuyChooSell").value;
+            await BuyerContract.chooseSeller(SellerAddress);
+        }
+
+        async function requestProductQuote() {
+            const PID = document.getElementById("BProdID").value;
+            let ProdDetails = await BuyerContract.requestProduct(PID);
+            alert("Product Details \n\n'Product ID, Name, Description, Price (Wei), Sold, Buyer Address' are as follows: \n\n"+Object.values(ProdDetails));
+            console.log("Product Details\n" +"'Product ID, Product_Name, Product_Description, Product_Price (Wei), Sold, Buyer Address' are as follows"+ProdDetails);
+        }
+
+        async function Buy() {
+            const PID = document.getElementById("BuyProdID").value; 
+            let BuyerName = document.getElementById("BuyName").value;
+            let BuyerAddress = document.getElementById("BuyDelAdd").value;
+            const BuyerPhone = document.getElementById("BuyPhone").value; 
+            let BuyerMail = document.getElementById("BuyEmail").value;
+            const amount = document.getElementById("BuyProdAmt").value;
+            let bought = await BuyerContract.Buy(PID,BuyerName,BuyerAddress,BuyerPhone,BuyerMail,{value: amount});
+        }
+
+        async function getOrderId() {
+          const PID = document.getElementById("BuyGetOID").value;
+          let OID = await BuyerContract.getOrderId(PID);
+          alert("Your Order ID is as follows: \n\n"+Object.values(OID));
+        }
+
+        async function getExportId() {
+          const OID = document.getElementById("BuyGetExpoID").value;
+          let ExpoID = await BuyerContract.getExportId(OID);
+          alert("Your Export ID Details is as follows: \n\n"+Object.values(ExpoID));
+        }
+
+        async function viewInvoice() {
+          const OID = document.getElementById("BuyProdBill").value;
+          let ordDetails = await BuyerContract.viewInvoice(OID);
+          alert("Order Invoice Details 'Order_ID, Paid_Amount, From, To' are as follows: \n\n"+Object.values(ordDetails));
+        }
+
+        async function chooseFreighter() {
+            const PID = document.getElementById("BuyChooff").value;
+            console.log(await BuyerContract.chooseFreighter(PID));
+        }
+
+        async function bookFreight() {
+            const OID = document.getElementById("BuyBookff").value; 
+            const amount = document.getElementById("BuyBookffamt").value;
+            await BuyerContract.BookFreighter(OID,{value: amount});
+            console.log("Booked Freighter");
+        }
+
+        async function FreightBookingStatus() {
+          const OID = document.getElementById("BuyViewffBook").value; 
+          let ffBookDetails = await BuyerContract.FreightBookingStatus(OID);
+          alert("Logistics Booking Details 'Order_ID, Name, Phone, Address, Email, Status' are as follows: \n\n"+Object.values(ffBookDetails));
+        }
+
+        async function ViewOrders() {
+            const OID = document.getElementById("SellViewOdr").value;
+            let order = await SellerContract.Orders(OID);
+            alert("Order Details\n 'Order_ID, Product_ID, Name, Price, Buyer_Address, Freighter_Address, Ordered, Packed, HandedOver' are as follows: "+Object.values(order));
+        }
+
+        async function viewBuyerDetails() {
+            const OID = document.getElementById("SellViewBuyDetls").value;
+            let order = await SellerContract.viewBuyerDetails(OID);
+            alert("Buyer Details of the entered ordered ID includes \n 'Buyer_account_Address, Name, Delivery_Address, Phone, Email_ID' are as follows: \n\n"+Object.values(order));
+        }
+
+        async function packOrder() {
+            const OID = document.getElementById("SellPacOdr").value;
+            await SellerContract.packedOrder(OID);
+        }
+
+        async function pickOrder() {
+            const OID = document.getElementById("ffPickOdr").value;
+            await LogisticsContract.pickProductForExport(OID);
+        }
+
+        async function initiateDelivery() {
+            const ExpoID = document.getElementById("initExpoff").value;
+            console.log(LogisticsContract.initiateDelivery(ExpoID));
+        }
+
+        async function chooseClearncePort() {
+            var portAddress = document.getElementById("ChooClrncePort").value;
+            console.log(await LogisticsContract.chooseClearncePort(portAddress));
+        }
+
+        async function sourcePortArrival() {
+            const ExpoID = document.getElementById("SrcPortArvl").value;
+            console.log(await LogisticsContract.sourcePortArrival(ExpoID));
+        }
+
+        async function ExportClearance() {
+            const ExpoID = document.getElementById("ExpoPortClrnc").value;
+            console.log(await PortClearanceContract.ExportClearance(ExpoID));
+        }
+
+        async function destinationPortArrival() {
+            const ExpoID = document.getElementById("DestPortArvl").value;
+            console.log(await LogisticsContract.destinationPortArrival(ExpoID));
+        }
+
+        async function importClearance() {
+            const ExpoID = document.getElementById("ImpoPortClrnc").value;
+            console.log(await PortClearanceContract.importClearance(ExpoID));
+        }
+
+        async function deliver() {
+            const ExpoID = document.getElementById("ffExpoDelvr").value;
+            console.log(await LogisticsContract.deliver(ExpoID));
+        }
+
+        async function productDeliveryStatus() {
+            const ExpoID = document.getElementById("DelvStatus").value;
+            let status = await BuyerContract.productDeliveryStatus(ExpoID);
+            console.log("Delivery Status Details\n\n 'Export_ID, Order_ID, Product_ID, ProductHandedOver, Delivery_Status' are as follows: \n"+Object.values(status));
+            alert("Delivery Status Details\n\n 'Export_ID, Order_ID, Product_ID, ProductHandedOver, Delivery_Status' are as follows: \n\n"+Object.values(status));
+        }
+
+        async function doInitMetamask() {
+
+            BuyerContractAddress = "0xE5eB757D1207F4141c431fd840549fBdA7BA8e41";
+
+            SellerContractAddress = "0x82372b471C7C50076AAEAF084c2D405D19c43A33";
+
+            LogisticsContractAddress = "0xa66c258e847e259bE92832c81b9C2f7bc8bA06B5";
+
+            PortClearanceContractAddress = "0x779976aB2e831BF57D546C8335E5233a8d9C4E9D";
+
+
+
+            BuyerContractABI = [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "PID",
+          "type": "uint256"
+        }
+      ],
+      "name": "requestProduct",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "OID",
+          "type": "uint256"
+        }
+      ],
+      "name": "viewInvoice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "PID",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "_name",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_address",
+          "type": "string"
+        },
+        {
+          "internalType": "uint40",
+          "name": "_phone",
+          "type": "uint40"
+        },
+        {
+          "internalType": "string",
+          "name": "_email",
+          "type": "string"
+        }
+      ],
+      "name": "Buy",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function",
+      "payable": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "PID",
+          "type": "uint256"
+        }
+      ],
+      "name": "getOrderId",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "OID",
+          "type": "uint256"
+        }
+      ],
+      "name": "getExportId",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_seller",
+          "type": "address"
+        }
+      ],
+      "name": "chooseSeller",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_logistics",
+          "type": "address"
+        }
+      ],
+      "name": "chooseFreighter",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "OID",
+          "type": "uint256"
+        }
+      ],
+      "name": "BookFreighter",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function",
+      "payable": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "OID",
+          "type": "uint256"
+        }
+      ],
+      "name": "FreightBookingStatus",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        },
+        {
+          "internalType": "uint40",
+          "name": "",
+          "type": "uint40"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        },
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_OID",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_buyerAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_ExpoID",
+          "type": "uint256"
+        }
+      ],
+      "name": "saveExpoID",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "expoID",
+          "type": "uint256"
+        }
+      ],
+      "name": "productDeliveryStatus",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    }
+  ]
+            
+
+    SellerContractABI = [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_seller",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "Orders",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "OID",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "PID",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "productName",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "pricePaid",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "buyerIDAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "freighterAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "ordered",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "packed",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "handedOver",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "Products",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "PID",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "productName",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "productDescription",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "productPrice",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "productPickUpAddress",
+          "type": "string"
+        },
+        {
+          "internalType": "bool",
+          "name": "sold",
+          "type": "bool"
+        },
+        {
+          "internalType": "address",
+          "name": "buyer",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "OID",
+          "type": "uint256"
+        }
+      ],
+      "name": "viewBuyerDetails",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        },
+        {
+          "internalType": "uint40",
+          "name": "",
+          "type": "uint40"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_productName",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_productDescription",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_productPrice",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "pickUpAddress",
+          "type": "string"
+        }
+      ],
+      "name": "addProduct",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_PID",
+          "type": "uint256"
+        }
+      ],
+      "name": "requestProductQuotes",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "pID",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_Buyer",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "_name",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_address",
+          "type": "string"
+        },
+        {
+          "internalType": "uint40",
+          "name": "_phone",
+          "type": "uint40"
+        },
+        {
+          "internalType": "string",
+          "name": "_email",
+          "type": "string"
+        }
+      ],
+      "name": "Buy",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function",
+      "payable": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "OID",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_logistics",
+          "type": "address"
+        }
+      ],
+      "name": "freightValidation",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        },
+        {
+          "internalType": "uint40",
+          "name": "",
+          "type": "uint40"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "OID",
+          "type": "uint256"
+        }
+      ],
+      "name": "orderHandOver",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "OID",
+          "type": "uint256"
+        }
+      ],
+      "name": "packedOrder",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ]
+  
+
+
+    LogisticsContractABI = [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "adr",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "CurrentProductDeliveries",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "ExpoID",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "OID",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "PID",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "productHandedOver",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "deliveryInitiated",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "exportPort",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "importPort",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "delivered",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "exportCleared",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "importCleared",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "OID",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "seller",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_logistics",
+          "type": "address"
+        }
+      ],
+      "name": "bookFreight",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "OID",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_caller",
+          "type": "address"
+        }
+      ],
+      "name": "viewFreightBookings",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        },
+        {
+          "internalType": "uint40",
+          "name": "",
+          "type": "uint40"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        },
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "OID",
+          "type": "uint256"
+        }
+      ],
+      "name": "pickProductForExport",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_ExpoID",
+          "type": "uint256"
+        }
+      ],
+      "name": "initiateDelivery",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_ExpoID",
+          "type": "uint256"
+        }
+      ],
+      "name": "deliveryStatus",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_ClearancePortContract",
+          "type": "address"
+        }
+      ],
+      "name": "chooseClearncePort",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_ExpoID",
+          "type": "uint256"
+        }
+      ],
+      "name": "sourcePortArrival",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_ExpoID",
+          "type": "uint256"
+        }
+      ],
+      "name": "destinationPortArrival",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_ExpoID",
+          "type": "uint256"
+        }
+      ],
+      "name": "deliver",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_expoID",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_Logistics",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_seller",
+          "type": "address"
+        }
+      ],
+      "name": "exportVerifiction",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_expoID",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_Logistics",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_buyer",
+          "type": "address"
+        }
+      ],
+      "name": "importVerifiction",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ]
+
+
+    PortClearanceContractABI = [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_ExportClearanceAuthority",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_importClearanceAuthority",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "exportClearances",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "arrival",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "cleared",
+          "type": "bool"
+        },
+        {
+          "internalType": "address",
+          "name": "LogisticsAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "sellerAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "ExpoID",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "importClearances",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "arrival",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "cleared",
+          "type": "bool"
+        },
+        {
+          "internalType": "address",
+          "name": "LogisticsAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "buyerAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "ExpoID",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "ExpoID",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_LogisticsContractAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_SellerAddress",
+          "type": "address"
+        }
+      ],
+      "name": "exportPortArrival",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "ExpoID",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_LogisticsContractAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_buyerAddress",
+          "type": "address"
+        }
+      ],
+      "name": "importPortArrival",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "ExpoID",
+          "type": "uint256"
+        }
+      ],
+      "name": "ExportClearance",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "ExpoID",
+          "type": "uint256"
+        }
+      ],
+      "name": "importClearance",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ]
+
+
+
+
+            provider = new ethers.providers.Web3Provider(web3.currentProvider);
+
+            try {
+                await provider.send("eth_requestAccounts", []);
+            } catch {
+                console.log("Connection error");
+            }
+
+            accounts = await provider.listAccounts();
+            console.log(accounts);
+            
+            signer = await provider.getSigner(accounts[0]);
+            console.log(signer);
+
+            console.log(BuyerContractAddress);
+            console.log(BuyerContractABI);
+
+            console.log(SellerContractAddress);
+            console.log(SellerContractABI);
+
+            console.log(LogisticsContractAddress);
+            console.log(LogisticsContractABI);
+
+            console.log(PortClearanceContractAddress);
+            console.log(PortClearanceContractABI);
+            
+
+            BuyerContract = new ethers.Contract( BuyerContractAddress, BuyerContractABI, signer);
+            SellerContract = new ethers.Contract( SellerContractAddress, SellerContractABI, signer);
+            LogisticsContract = new ethers.Contract( LogisticsContractAddress, LogisticsContractABI, signer);
+            PortClearanceContract = new ethers.Contract( PortClearanceContractAddress, PortClearanceContractABI, signer);
+
+        }
+        doInitMetamask();
+    </script>
+</html>
+
+
+
+
+
+
