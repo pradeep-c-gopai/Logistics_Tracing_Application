@@ -1,18 +1,23 @@
-PROJECT: LOGISTIC TRACING APPLICATION WITH ETHEREUM AND GANACHE.
+# PROJECT: LOGISTIC TRACING APPLICATION WITH ETHEREUM AND GANACHE.
 
-Prerequisites to be followed before deployment:
+## Status:
 
-    -> Set seller account address in '2_migrations.sol' file. Doing soo, gives the Authorized OwnerShip for the seller account.
+* Completed
 
-    -> Set Logistics account address in '4_migrations.sol' file. Doing soo, gives the Authorized OwnerShip for the Logistics account.
 
-    -> Set Export Clearnce and Import Clearance Port account addresses respectively in '5_migrations.sol' file. Doing so, gives the Authorized Ownerships for the export_port_clearance account and import_port_clearance account respectively.
+### Prerequisites to be followed before deployment:
 
-Customisation after deploying contracts on ganache:
+* Set seller account address in '2_migrations.sol' file. Doing soo, gives the Authorized OwnerShip for the seller account.
 
-    -> Setting Contract address of BuyerContractAddress, SellerContractAddress, LogisticsContractAddress, and PortClearanceContractAddress in 'index.html'.
+* Set Logistics account address in '4_migrations.sol' file. Doing soo, gives the Authorized OwnerShip for the Logistics account.
 
-Sequence flow:
+* Set Export Clearnce and Import Clearance Port account addresses respectively in '5_migrations.sol' file. Doing so, gives the Authorized Ownerships for the export_port_clearance account and import_port_clearance account respectively.
+
+### Customisation after deploying contracts on ganache:
+
+* Setting Contract address of BuyerContractAddress, SellerContractAddress, LogisticsContractAddress, and PortClearanceContractAddress in 'index.html'.
+
+### Complete Application Sequence flow:
 
     -> Seller        - Add Product (by providing some parameters including Product_Name, Description, Price, PickUp_Address) {onlySeller Modifier used}
 
